@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Recognition & Calorie Estimator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🍔 Food Recognition & Calorie Estimator</h1>
+        <p>Upload a food image to predict the item and estimate calories</p>
+
+        <input type="file" id="imageUpload" accept="image/*">
+        
+        <div class="image-preview">
+            <img id="preview" src="" alt="Image Preview">
+        </div>
+
+        <button onclick="predictFood()">Predict</button>
+
+        <div class="result">
+            <h2 id="foodName"></h2>
+            <p id="calories"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
